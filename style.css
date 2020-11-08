@@ -4,6 +4,32 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  background-color: rgb(169, 215, 255);
+  position: relative;
+}
+
+#car-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#car {
+  z-index: 100000;
+}
+
+#floor {
+  width: 100vw;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(61, 61, 61);
+}
+
 #right-wheel, #left-wheel {
   animation: wheel 1s linear infinite;
   transform-origin: center;
@@ -16,6 +42,28 @@
   }
 
   to {
-    transform: rotateZ(360deg);
+    transform: rotateZ(-360deg);
+  }
+}
+
+#body-car {
+  animation: body-car 2s linear 1s infinite;
+}
+
+@keyframes body-car {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
