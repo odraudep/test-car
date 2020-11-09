@@ -21,6 +21,7 @@ body {
 
 #car {
   z-index: 100000;
+  /* transform: translateY(40px); */
 }
 
 #floor {
@@ -74,8 +75,4 @@ body {
 
 .clounds-container img:nth-child(4) {
   transform: translateY(80px);
-}
-
-.clounds-container img:last-child {
-  box-shadow: 0 0 20px red;
 }

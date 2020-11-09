@@ -2,7 +2,7 @@ let sky = document.body;
 let data = new Date()
 let hora = data.getHours()
 
-hora = 7
+// hora = 22
 
 // start
 if (hora >= 6 && hora <= 7 || hora >= 17 && hora <= 18) {
