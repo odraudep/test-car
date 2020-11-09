@@ -6,8 +6,9 @@
 
 body {
   height: 100vh;
-  background-color: rgb(169, 215, 255);
   position: relative;
+  overflow-x: hidden;
+  transition: background 10s linear;
 }
 
 #car-container {
@@ -50,20 +51,31 @@ body {
   animation: body-car 2s linear 1s infinite;
 }
 
-@keyframes body-car {
-  0% {
-    transform: translateY(0);
-  }
+.clounds-container {
+  width: 200vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  animation: clounds 10s linear infinite;
+}
 
-  25% {
-    transform: translateY(-10px);
-  }
+.clounds-container img:nth-child(1) {
+  transform: translateY();
+}
 
-  50% {
-    transform: translateY(0);
-  }
+.clounds-container img:nth-child(2) {
+  transform: translateY(50px);
+}
 
-  100% {
-    transform: translateY(0);
-  }
+.clounds-container img:nth-child(3) {
+  transform: translateY(-50px);
+}
+
+.clounds-container img:nth-child(4) {
+  transform: translateY(80px);
+}
+
+.clounds-container img:last-child {
+  box-shadow: 0 0 20px red;
 }
