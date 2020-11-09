@@ -2,11 +2,11 @@ let sky = document.body;
 let data = new Date()
 let hora = data.getHours()
 
-hora = 22
+hora = 7
 
 // start
 if (hora >= 6 && hora <= 7 || hora >= 17 && hora <= 18) {
-  sky.style.backgroundColor = '#feae02'
+  sky.style.background = 'linear-gradient(to top, #f69026, #0189d6)'
   //day
 } else if (hora >= 7 && hora <= 16) {
   sky.style.backgroundColor = '#0189d6'
